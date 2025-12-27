@@ -29,7 +29,30 @@
 //     age:22
 // };
 
-const myFunction = function (){
-    console.log("hello world")
-}
-console.log(typeof myFunction)
+// const myFunction = function (){
+//     console.log("hello world")
+// }
+// console.log(typeof myFunction)
+
+// Stack (Primitive) Heap(Non Primitive)
+
+// let myYoutubename = "vijaydotcom"
+
+// let anothername = myYoutubename
+// anothername = "chaiaurcode"
+
+// console.log(myYoutubename);
+// console.log(anothername);
+
+
+
+// let userOne = {
+//     email: "zaifpasha.com",
+//     upi:1232
+// }
+
+// let userTwo = userOne
+// userTwo.email = "alipasha.com"
+
+// console.log(userOne.email);
+// console.log(userTwo.email);

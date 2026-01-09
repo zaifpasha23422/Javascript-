@@ -107,4 +107,4 @@
 //     return value.edition == "2nd" , value.title == "Clean Code"
 
 // })
-// console.log(amashbooks);
+console.log(amashbooks);

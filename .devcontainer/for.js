@@ -70,3 +70,7 @@
 //     console.log(`Value of i is ${i}`)
 //  }
 
+const name ="zaif pasha "
+for(let i=0; i<=name.length;i++){
+    console.log(name[i]);
+}

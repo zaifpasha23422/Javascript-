@@ -107,4 +107,29 @@
 //     return value.edition == "2nd" , value.title == "Clean Code"
 
 // })
-console.log(amashbooks);
+// console.log(amashbooks);
+
+// 1. Filters out products that are out of stock (stock === 0).
+// 2. Return the only name and price of remaining products.
+// 3. calculate the total price of all remaining products.
+
+
+// const products = [
+//   { name: "Laptop", category: "Electronics", price: 1200, stock: 10 },
+//   { name: "Phone", category: "Electronics", price: 800, stock: 0 },
+//   { name: "Tablet", category: "Electronics", price: 500, stock: 5 },
+//   { name: "Monitor", category: "Electronics", price: 300, stock: 2 },
+// ]
+
+// const stock = products.filter((item)=> item.stock > 0)
+// console.log("Stock",stock);
+
+// const productnames = stock.map((item)=> 
+//   {return{ name:item.name, 
+//    price:item.price}})
+// console.log("Que.2",productnames);
+
+// const total = productnames.reduce((acc, val)=>{
+//   return acc+ val.price
+// },0);
+// console.log("total", total);

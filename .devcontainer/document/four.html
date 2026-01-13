@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM fourth clas</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <ul class="language">
+        <li>Javasvript</li>
+    </ul>
+</body>
+<script>
+    function addLanguagae(langName){
+        const li =document.createElement('li')
+        li.innerHTML =  `${langName}`
+        document.querySelector('.language').appendChild(li)
+    }
+    addLanguagae("python")
+    addLanguagae("C++")
+
+    // optimize way 
+    function addOptiLanguage(langName){
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+    }
+    addOptiLanguage("english")
+
+
+    // Edit
+    // const secondLang = document.querySelector("li:nth-child(2)")
+    // console.log(secondLang);
+    // secondLang.innerHTML = "spanish"
+
+    // optimize way to edit 
+    const thirdLang = document.querySelector("li:nth-child(3)")
+    const newli = document.createElement('li')
+    newli.textContent ="mojo"
+    thirdLang.replaceWith(newli)
+    
+    const firstLang = document.querySelector('li')
+    firstLang.outerHTML = "<li>sharp</li>"
+
+    // remove
+    const lastLang = document.querySelector('li:last-child')
+    lastLang.remove()
+</script>
+</html>
